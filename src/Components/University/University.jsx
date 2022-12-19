@@ -1,7 +1,5 @@
 import {useNavigate} from 'react-router-dom';
 
-
-
 const University = ({DtaUniversidades}) => {
     // Variables de uso React y Estados UseState
     const history = useNavigate();
