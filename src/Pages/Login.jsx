@@ -17,7 +17,9 @@ const Login = () => {
   // Fuction by Login User
   const LoginUser=async (e)=>{
     console.log('Iniciar Sesión')
-    axios.post(`https://server-amatista.vercel.app/User/signin`,{ withCredentials: true,
+    axios.post(`https://server-amatista.vercel.app/User/signin`,{ withCredentials: true, headers: {
+      'Access-Control-Allow-Origin' : '*',
+      },
     email,
     password
     }).then((respuesta)  => {
